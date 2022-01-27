@@ -1,12 +1,10 @@
-
-
 from PySide6.QtCore import (QCoreApplication, QMetaObject, QRect, QSize, Qt)
 from PySide6.QtGui import (QAction, QCursor, QFont, QIcon)
 from PySide6.QtWidgets import (QComboBox, QFormLayout, QGridLayout,
                                QHBoxLayout, QLabel, QLineEdit, QPushButton, QSizePolicy, QStatusBar,
                                QTabWidget, QTableWidget, QTableWidgetItem, QTextEdit,
                                QToolBar, QVBoxLayout, QWidget)
-import rc_icons
+
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -68,9 +66,7 @@ class Ui_MainWindow(object):
         self.label_field1.setAlignment(
             Qt.AlignRight | Qt.AlignTrailing | Qt.AlignVCenter)
         self.label_field1.setMargin(2)
-
         self.gridLayout.addWidget(self.label_field1, 0, 0, 1, 1)
-
         self.lineEdit_1 = QLineEdit(self.layoutWidget)
         self.lineEdit_1.setObjectName(u"lineEdit_1")
         self.lineEdit_1.setStyleSheet(u"background:white;\n"
@@ -102,9 +98,7 @@ class Ui_MainWindow(object):
         self.label_field3.setAlignment(
             Qt.AlignRight | Qt.AlignTrailing | Qt.AlignVCenter)
         self.label_field3.setMargin(2)
-
         self.gridLayout.addWidget(self.label_field3, 2, 0, 1, 1)
-
         self.lineEdit_3 = QLineEdit(self.layoutWidget)
         self.lineEdit_3.setObjectName(u"lineEdit_3")
         self.lineEdit_3.setStyleSheet(u"background:white;\n"
@@ -112,9 +106,7 @@ class Ui_MainWindow(object):
                                       "border-radius: 10px;\n"
                                       "padding_top:10px;\n"
                                       "")
-
         self.gridLayout.addWidget(self.lineEdit_3, 2, 1, 1, 1)
-
         self.label_field4 = QLabel(self.layoutWidget)
         self.label_field4.setObjectName(u"label_field4")
         self.label_field4.setStyleSheet(u"    border-width: 0px;")
@@ -133,9 +125,7 @@ class Ui_MainWindow(object):
                                       "")
 
         self.gridLayout.addWidget(self.lineEdit_4, 3, 1, 1, 1)
-
         self.horizontalLayout.addLayout(self.gridLayout)
-
         self.verticalLayout = QVBoxLayout()
         self.verticalLayout.setObjectName(u"verticalLayout")
         self.verticalLayout.setContentsMargins(5, 5, 5, 5)
@@ -217,9 +207,7 @@ class Ui_MainWindow(object):
         self.ButtonRemove.setIcon(icon6)
 
         self.verticalLayout.addWidget(self.ButtonRemove)
-
         self.horizontalLayout.addLayout(self.verticalLayout)
-
         self.verticalLayout_4.addLayout(self.horizontalLayout)
 
         self.tableEdit = QTableWidget(self.layoutWidget)
@@ -411,9 +399,7 @@ class Ui_MainWindow(object):
                                          "border-radius: 10px;")
 
         self.formLayout.setWidget(1, QFormLayout.FieldRole, self.lineEditInfo2)
-
         self.verticalLayout_2.addLayout(self.formLayout)
-
         self.labelNotes = QLabel(self.layoutWidget2)
         self.labelNotes.setObjectName(u"labelNotes")
         font = QFont()
@@ -423,9 +409,7 @@ class Ui_MainWindow(object):
         self.labelNotes.setFont(font)
         self.labelNotes.setStyleSheet(u"    border-width: 0px;")
         self.labelNotes.setAlignment(Qt.AlignCenter)
-
         self.verticalLayout_2.addWidget(self.labelNotes)
-
         self.textEdit = QTextEdit(self.layoutWidget2)
         self.textEdit.setObjectName(u"textEdit")
         self.textEdit.setStyleSheet(u"background:white;\n"
@@ -433,7 +417,6 @@ class Ui_MainWindow(object):
                                     "border-radius: 10px;")
 
         self.verticalLayout_2.addWidget(self.textEdit)
-
         icon9 = QIcon()
         icon9.addFile(u":/icons/icons8-archivo-nuevo-24.png",
                       QSize(), QIcon.Normal, QIcon.Off)
@@ -445,109 +428,74 @@ class Ui_MainWindow(object):
         self.toolBar = QToolBar(MainWindow)
         self.toolBar.setObjectName(u"toolBar")
         MainWindow.addToolBar(Qt.TopToolBarArea, self.toolBar)
-
         self.toolBar.addAction(self.actionCopy)
         self.toolBar.addAction(self.actionCut)
         self.toolBar.addAction(self.actionPaste)
         self.toolBar.addAction(self.actionHelp)
-
         self.retranslateUi(MainWindow)
-
         self.tabWidget.setCurrentIndex(0)
-
         QMetaObject.connectSlotsByName(MainWindow)
+
     # setupUi
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate(
             "MainWindow", u"Chemical tools", None))
-# if QT_CONFIG(tooltip)
         MainWindow.setToolTip(QCoreApplication.translate(
             "MainWindow", u"Edici\u00f3n", None))
-#endif // QT_CONFIG(tooltip)
         self.actionCopy.setText(
             QCoreApplication.translate("MainWindow", u"Copy", None))
-# if QT_CONFIG(tooltip)
         self.actionCopy.setToolTip(QCoreApplication.translate(
             "MainWindow", u"Copy text", None))
-#endif // QT_CONFIG(tooltip)
-# if QT_CONFIG(shortcut)
         self.actionCopy.setShortcut(
             QCoreApplication.translate("MainWindow", u"Ctrl+C", None))
-#endif // QT_CONFIG(shortcut)
         self.actionCut.setText(
             QCoreApplication.translate("MainWindow", u"Cut", None))
-# if QT_CONFIG(tooltip)
         self.actionCut.setToolTip(QCoreApplication.translate(
             "MainWindow", u"Cut text", None))
-#endif // QT_CONFIG(tooltip)
-# if QT_CONFIG(shortcut)
         self.actionCut.setShortcut(
             QCoreApplication.translate("MainWindow", u"Ctrl+X", None))
-#endif // QT_CONFIG(shortcut)
         self.actionPaste.setText(
             QCoreApplication.translate("MainWindow", u"Paste", None))
-# if QT_CONFIG(tooltip)
         self.actionPaste.setToolTip(QCoreApplication.translate(
             "MainWindow", u"Paste text", None))
-#endif // QT_CONFIG(tooltip)
-# if QT_CONFIG(shortcut)
         self.actionPaste.setShortcut(
             QCoreApplication.translate("MainWindow", u"Ctrl+V", None))
-#endif // QT_CONFIG(shortcut)
         self.actionHelp.setText(
             QCoreApplication.translate("MainWindow", u"Help", None))
-# if QT_CONFIG(tooltip)
         self.actionHelp.setToolTip(
             QCoreApplication.translate("MainWindow", u"Help", None))
-#endif // QT_CONFIG(tooltip)
-# if QT_CONFIG(shortcut)
+
         self.actionHelp.setShortcut(
             QCoreApplication.translate("MainWindow", u"Ctrl+H", None))
-#endif // QT_CONFIG(shortcut)
-# if QT_CONFIG(tooltip)
+
         self.tabWidget.setToolTip("")
-#endif // QT_CONFIG(tooltip)
         self.label_field1.setText(QCoreApplication.translate(
             "MainWindow", u"F\u00f3rmula qu\u00edmica:", None))
-# if QT_CONFIG(tooltip)
         self.lineEdit_1.setToolTip(QCoreApplication.translate(
             "MainWindow", u"Campo para la f\u00f3rmula qu\u00edmica", None))
-#endif // QT_CONFIG(tooltip)
         self.label_field2.setText(
             QCoreApplication.translate("MainWindow", u"Nombre:", None))
-# if QT_CONFIG(tooltip)
         self.lineEdit_2.setToolTip(QCoreApplication.translate(
             "MainWindow", u"Campo para el nombre de la f\u00f3rmula qu\u00edmica", None))
-#endif // QT_CONFIG(tooltip)
         self.label_field3.setText(QCoreApplication.translate(
             "MainWindow", u"Punto de ebullici\u00f3n:", None))
-# if QT_CONFIG(tooltip)
         self.lineEdit_3.setToolTip(QCoreApplication.translate(
             "MainWindow", u"Campo para la punto de ebullici\u00f3n de la f\u00f3rmula qu\u00edmica", None))
-#endif // QT_CONFIG(tooltip)
         self.label_field4.setText(
             QCoreApplication.translate("MainWindow", u"Tipo:", None))
-# if QT_CONFIG(tooltip)
         self.lineEdit_4.setToolTip(QCoreApplication.translate(
             "MainWindow", u"Campo para el tipo de la f\u00f3rmula qu\u00edmica", None))
-#endif // QT_CONFIG(tooltip)
-# if QT_CONFIG(statustip)
         self.ButtonInsert.setStatusTip(QCoreApplication.translate(
             "MainWindow", u"Insertar valor", None))
-#endif // QT_CONFIG(statustip)
         self.ButtonInsert.setText(QCoreApplication.translate(
             "MainWindow", u"Insertar", None))
-# if QT_CONFIG(statustip)
         self.ButtonReplace.setStatusTip(QCoreApplication.translate(
             "MainWindow", u"Modificar valor", None))
-#endif // QT_CONFIG(statustip)
         self.ButtonReplace.setText(QCoreApplication.translate(
             "MainWindow", u"Modificar", None))
-# if QT_CONFIG(statustip)
         self.ButtonRemove.setStatusTip(QCoreApplication.translate(
             "MainWindow", u"Eliminar valor", None))
-#endif // QT_CONFIG(statustip)
         self.ButtonRemove.setText(QCoreApplication.translate(
             "MainWindow", u"Eliminar", None))
         ___qtablewidgetitem = self.tableEdit.horizontalHeaderItem(0)
@@ -573,18 +521,12 @@ class Ui_MainWindow(object):
         self.comboBoxFilter.setItemText(
             3, QCoreApplication.translate("MainWindow", u"Tipo", None))
 
-# if QT_CONFIG(tooltip)
         self.lineEditFilter.setToolTip(QCoreApplication.translate(
             "MainWindow", u"Campo de valor para el filtrado", None))
-#endif // QT_CONFIG(tooltip)
-# if QT_CONFIG(tooltip)
         self.ButtonFilterInfo.setToolTip(QCoreApplication.translate(
             "MainWindow", u"Filtarr Informaci\u00f3n", None))
-#endif // QT_CONFIG(tooltip)
-# if QT_CONFIG(statustip)
         self.ButtonFilterInfo.setStatusTip(QCoreApplication.translate(
             "MainWindow", u"Filtarr Informaci\u00f3n", None))
-#endif // QT_CONFIG(statustip)
         self.ButtonFilterInfo.setText(
             QCoreApplication.translate("MainWindow", u"Filtrar", None))
         ___qtablewidgetitem4 = self.tableFilter.horizontalHeaderItem(0)
@@ -601,36 +543,25 @@ class Ui_MainWindow(object):
             QCoreApplication.translate("MainWindow", u"Tipo", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_3), QCoreApplication.translate(
             "MainWindow", u"Filtrar informaci\u00f3n", None))
-# if QT_CONFIG(tooltip)
         self.buttoMakeInfo.setToolTip(QCoreApplication.translate(
             "MainWindow", u"Generar Informe", None))
-#endif // QT_CONFIG(tooltip)
-# if QT_CONFIG(statustip)
         self.buttoMakeInfo.setStatusTip(QCoreApplication.translate(
             "MainWindow", u"Generar Informe", None))
-#endif // QT_CONFIG(statustip)
         self.buttoMakeInfo.setText(QCoreApplication.translate(
             "MainWindow", u"Generar Informe", None))
         self.labelInffo1.setText(QCoreApplication.translate(
             "MainWindow", u"Formula A:", None))
-# if QT_CONFIG(tooltip)
         self.lineEditInfo1.setToolTip(QCoreApplication.translate(
             "MainWindow", u"Campo para la f\u00f3rmula qu\u00edmica", None))
-#endif // QT_CONFIG(tooltip)
         self.labelInfo2.setText(QCoreApplication.translate(
             "MainWindow", u"Formula B:", None))
-# if QT_CONFIG(tooltip)
         self.lineEditInfo2.setToolTip(QCoreApplication.translate(
             "MainWindow", u"Campo para la f\u00f3rmula qu\u00edmica", None))
-#endif // QT_CONFIG(tooltip)
         self.labelNotes.setText(QCoreApplication.translate(
             "MainWindow", u"Anotaciones", None))
-# if QT_CONFIG(tooltip)
         self.textEdit.setToolTip(QCoreApplication.translate(
             "MainWindow", u"Entrada de texto paraa anotaciones", None))
-#endif // QT_CONFIG(tooltip)
         self.tabWidget.setTabText(self.tabWidget.indexOf(
             self.tab_2), QCoreApplication.translate("MainWindow", u"Generar Informe", None))
         self.toolBar.setWindowTitle(
             QCoreApplication.translate("MainWindow", u"toolBar", None))
-    # retranslateUi
