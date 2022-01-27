@@ -1,0 +1,12 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>icons8-acerca-de-32.png</file>
+    <file>icons8-copiar-30.png</file>
+    <file>icons8-cortar-24.png</file>
+    <file>icons8-pegar-26.png</file>
+    <file>icons8-archivo-nuevo-24.png</file>
+    <file>icons8-delete-24.png</file>
+    <file>icons8-editar-24.png</file>
+    <file>icons8-más-24.png</file>
+  </qresource>
+</RCC>
