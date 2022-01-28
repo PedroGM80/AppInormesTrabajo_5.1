@@ -23,16 +23,7 @@ Created with: [Hackolade](https://hackolade.com/) - Polyglot data modeling for N
 
 ### <a id="contents"></a>
 
-*   [Table of Contents](file:///C:/Program%20Files/Hackolade/resources/app/app.html#contents)
-*   [1\. Model](file:///C:/Program%20Files/Hackolade/resources/app/app.html#model)
-*   [2\. Databases](file:///C:/Program%20Files/Hackolade/resources/app/app.html#containers)
-    *   [2.1 b\_db](file:///C:/Program%20Files/Hackolade/resources/app/app.html#638d55d0-7f9e-11ec-a396-1f25adf88b9f)
-        
-        [2.1.2. Collections](file:///C:/Program%20Files/Hackolade/resources/app/app.html#638d55d0-7f9e-11ec-a396-1f25adf88b9f-children)
-        
-        [2.1.2.1 a\_collection](file:///C:/Program%20Files/Hackolade/resources/app/app.html#6c091e60-7f9e-11ec-a396-1f25adf88b9f)
-        
-
+       
 ### <a id="model"></a>
 
 ##### 1\. Model
