@@ -2,7 +2,7 @@
 
 ### <a id="documentation-body"></a>
 
-![Hackolade image](/Chemical_Tools_Model%20documentation/image1.png?raw=true)
+!width="200"[Hackolade image](/Chemical_Tools_Model%20documentation/image1.png?raw=true)
 
 MongoDB Physical Model
 ----------------------
