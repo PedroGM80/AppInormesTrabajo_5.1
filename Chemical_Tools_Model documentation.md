@@ -86,8 +86,8 @@ Created with: [Hackolade](https://hackolade.com/) - Polyglot data modeling for N
       <tbody>
             <tr><td><a href=file:///C:/Program%20Files/Hackolade/resources/app/app.html#cdcff100-7f9e-11ec-a396-1f25adf88b9f class="margin-0">_id</a></td><td class="no-break-word">string</td><td>true</td><td>pk</td></tr>
             <tr><td><a href=file:///C:/Program%20Files/Hackolade/resources/app/app.html#ec479fc0-7f9e-11ec-a396-1f25adf88b9f class="margin-0">Nombre</a></td><td class="no-break-word">string</td><td>false</td><td></td></tr>
-            <tr><td><a href=file:///C:/Program%20Files/Hackolade/resources/app/app.html#08b5e9f0-7f9f-11ec-a396-1f25adf88b9f class="margin-0">Fórmula&nbsp;química</a></td><td class="no-break-word">string</td><td>false</td></tr>
-            <tr><td><a href=file:///C:/Program%20Files/Hackolade/resources/app/app.html#2258b810-7f9f-11ec-a396-1f25adf88b9f class="margin-0">Punto&nbsp;de&nbsp;ebullición</a></td><td class="no-break-word">string</td><td>false</td></tr>
+            <tr><td><a href=file:///C:/Program%20Files/Hackolade/resources/app/app.html#08b5e9f0-7f9f-11ec-a396-1f25adf88b9f class="margin-0">Fórmula&nbsp;química</a></td><td class="no-break-word">string</td><td>false</td><td></td></tr>
+            <tr><td><a href=file:///C:/Program%20Files/Hackolade/resources/app/app.html#2258b810-7f9f-11ec-a396-1f25adf88b9f class="margin-0">Punto&nbsp;de&nbsp;ebullición</a></td><td class="no-break-word">string</td><td>false</td><td></td></tr>
             <tr><td><a href=file:///C:/Program%20Files/Hackolade/resources/app/app.html#34134b10-7f9f-11ec-a396-1f25adf88b9f class="margin-0">Tipo</a></td><td class="no-break-word">string</td><td>false</td><td></td></tr>
       </tbody>
 </table>
