@@ -67,7 +67,8 @@ Created with: [Hackolade](https://hackolade.com/) - Polyglot data modeling for N
 
 ##### 2.1.1 **b\_db** Properties
 
-<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Database name</td><td>b_db</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr>
+<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Database name</td><td>b_db</td></tr>
+      <tr><td>Activated</td><td>true</td></tr>
       </tbody></table>
 
 ### <a id="638d55d0-7f9e-11ec-a396-1f25adf88b9f-children"></a>2.1.2 **b\_db** Collections
@@ -112,7 +113,11 @@ Created with: [Hackolade](https://hackolade.com/) - Polyglot data modeling for N
 
 ##### 2.1.2.1.3.1.2 **\_id** properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>_id</td></tr><tr><td>Technical name</td><td>_id</td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td>_id</td></tr><tr><td>Type</td><td>string</td></tr><tr><td>Description</td><td><div class="docs-markdown"></div></td></tr><tr><td>Format</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Min length</td><td></td></tr><tr><td>Max length</td><td></td></tr><tr><td>Default</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Required</td><td>true</td></tr><tr><td>Primary key</td><td>true</td></tr><tr><td>Dependencies</td><td></td></tr><tr><td>Foreign collection</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody>
+      <tr><td>Name</td><td>_id</td></tr><tr><td>Technical name</td><td>_id</td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td>_id</td></tr>
+      <tr><td>Type</td><td>string</td></tr>
+      <tr><td>Required</td><td>true</td></tr><tr><td>Primary key</td><td>true</td></tr>
+ </tbody></table>
 
 ### <a id="ec479fc0-7f9e-11ec-a396-1f25adf88b9f"></a>2.1.2.1.3.2 Field **Nombre**
 
@@ -122,7 +127,8 @@ Created with: [Hackolade](https://hackolade.com/) - Polyglot data modeling for N
 
 ##### 2.1.2.1.3.2.2 **Nombre** properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>Nombre</td></tr><tr><td>Technical name</td><td>Name</td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td>Nombre</td></tr><tr><td>Type</td><td>string</td></tr><tr><td>Description</td><td><div class="docs-markdown"></div></td></tr><tr><td>Format</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Min length</td><td></td></tr><tr><td>Max length</td><td></td></tr><tr><td>Default</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Required</td><td></td></tr><tr><td>Primary key</td><td></td></tr><tr><td>Dependencies</td><td></td></tr><tr><td>Foreign collection</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>Nombre</td></tr><tr><td>Technical name</td><td>Name</td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td>Nombre</td></tr><tr><td>Type</td><td>string</td></tr>
+ </tbody></table>
 
 ### <a id="08b5e9f0-7f9f-11ec-a396-1f25adf88b9f"></a>2.1.2.1.3.3 Field **Fórmula química**
 
@@ -132,7 +138,8 @@ Created with: [Hackolade](https://hackolade.com/) - Polyglot data modeling for N
 
 ##### 2.1.2.1.3.3.2 **Fórmula química** properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>Fórmula química</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td>Fórmula química</td></tr><tr><td>Type</td><td>string</td></tr><tr><td>Description</td><td><div class="docs-markdown"></div></td></tr><tr><td>Format</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Min length</td><td></td></tr><tr><td>Max length</td><td></td></tr><tr><td>Default</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Required</td><td></td></tr><tr><td>Primary key</td><td></td></tr><tr><td>Dependencies</td><td></td></tr><tr><td>Foreign collection</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>Fórmula química</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td>Fórmula química</td></tr><tr><td>Type</td><td>string</td></tr>
+</tbody></table>
 
 ### <a id="2258b810-7f9f-11ec-a396-1f25adf88b9f"></a>2.1.2.1.3.4 Field **Punto de ebullición**
 
@@ -142,7 +149,7 @@ Created with: [Hackolade](https://hackolade.com/) - Polyglot data modeling for N
 
 ##### 2.1.2.1.3.4.2 **Punto de ebullición** properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>Punto de ebullición</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td>Punto de ebullición</td></tr><tr><td>Type</td><td>string</td></tr><tr><td>Description</td><td><div class="docs-markdown"></div></td></tr><tr><td>Format</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Min length</td><td></td></tr><tr><td>Max length</td><td></td></tr><tr><td>Default</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Required</td><td></td></tr><tr><td>Primary key</td><td></td></tr><tr><td>Dependencies</td><td></td></tr><tr><td>Foreign collection</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>Punto de ebullición</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td>Punto de ebullición</td></tr><tr><td>Type</td><td>string</td></tr></tbody></table>
 
 ### <a id="34134b10-7f9f-11ec-a396-1f25adf88b9f"></a>2.1.2.1.3.5 Field **Tipo**
 
@@ -152,7 +159,7 @@ Created with: [Hackolade](https://hackolade.com/) - Polyglot data modeling for N
 
 ##### 2.1.2.1.3.5.2 **Tipo** properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>Tipo</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td>Tipo</td></tr><tr><td>Type</td><td>string</td></tr><tr><td>Description</td><td><div class="docs-markdown"></div></td></tr><tr><td>Format</td><td></td></tr><tr><td>Pattern</td><td></td></tr><tr><td>Min length</td><td></td></tr><tr><td>Max length</td><td></td></tr><tr><td>Default</td><td></td></tr><tr><td>Enum</td><td></td></tr><tr><td>Required</td><td></td></tr><tr><td>Primary key</td><td></td></tr><tr><td>Dependencies</td><td></td></tr><tr><td>Foreign collection</td><td></td></tr><tr><td>Foreign field</td><td></td></tr><tr><td>Relationship type</td><td></td></tr><tr><td>Relationship name</td><td></td></tr><tr><td>Cardinality</td><td></td></tr><tr><td>Sample</td><td></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>Tipo</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td>Tipo</td></tr><tr><td>Type</td><td>string</td></tr></tbody></table>
 
 ##### 2.1.2.1.4 **a\_collection** JSON Schema
 
