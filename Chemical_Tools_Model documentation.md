@@ -67,7 +67,8 @@ Created with: [Hackolade](https://hackolade.com/) - Polyglot data modeling for N
 
 ##### 2.1.1 **b\_db** Properties
 
-<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Database name</td><td>b_db</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Enable sharding</td><td></td></tr><tr><td>Description</td><td><div class="docs-markdown"></div></td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Database name</td><td>b_db</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr>
+      </tbody></table>
 
 ### <a id="638d55d0-7f9e-11ec-a396-1f25adf88b9f-children"></a>2.1.2 **b\_db** Collections
 
@@ -79,11 +80,29 @@ Created with: [Hackolade](https://hackolade.com/) - Polyglot data modeling for N
 
 ##### 2.1.2.1.2 **a\_collection** Properties
 
-<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Collection name</td><td>a_collection</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td></td></tr><tr><td>Description</td><td><div class="docs-markdown"></div></td></tr><tr><td>Database</td><td><a href=file:///C:/Program%20Files/Hackolade/resources/app/app.html#638d55d0-7f9e-11ec-a396-1f25adf88b9f><span class="name-container">b_db</span></a></td></tr><tr><td>Capped</td><td>false</td></tr><tr><td>Size</td><td></td></tr><tr><td>Max</td><td></td></tr><tr><td>Storage engine</td><td>WiredTiger</td></tr><tr><td>Config String</td><td></td></tr><tr><td>Validation level</td><td>Off</td></tr><tr><td>Validation action</td><td>Warn</td></tr><tr><td>Additional properties</td><td>false</td></tr><tr><td>Comments</td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table class="collection-properties-table"><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Collection name</td><td>a_collection</td></tr>
+      <tr><td>Activated</td><td>true</td></tr>
+      <tr><td>Database</td><td><a href=file:///C:/Program%20Files/Hackolade/resources/app/app.html#638d55d0-7f9e-11ec-a396-1f25adf88b9f><span class="name-container">b_db</span></a></td></tr>
+      <tr><td>Capped</td><td>false</td></tr>
+      <tr><td>Storage engine</td><td>WiredTiger</td></tr>
+      <tr><td>Validation level</td><td>Off</td></tr>
+      <tr><td>Validation action</td><td>Warn</td></tr>
+      <tr><td>Additional properties</td><td>false</td></tr>
+      </tbody></table>
 
 ##### 2.1.2.1.3 **a\_collection** Fields
 
-<table><thead><tr><td>Field</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead><tbody><tr><td><a href=file:///C:/Program%20Files/Hackolade/resources/app/app.html#cdcff100-7f9e-11ec-a396-1f25adf88b9f class="margin-0">_id</a></td><td class="no-break-word">string</td><td>true</td><td>pk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=file:///C:/Program%20Files/Hackolade/resources/app/app.html#ec479fc0-7f9e-11ec-a396-1f25adf88b9f class="margin-0">Nombre</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=file:///C:/Program%20Files/Hackolade/resources/app/app.html#08b5e9f0-7f9f-11ec-a396-1f25adf88b9f class="margin-0">Fórmula&nbsp;química</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=file:///C:/Program%20Files/Hackolade/resources/app/app.html#2258b810-7f9f-11ec-a396-1f25adf88b9f class="margin-0">Punto&nbsp;de&nbsp;ebullición</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr><tr><td><a href=file:///C:/Program%20Files/Hackolade/resources/app/app.html#34134b10-7f9f-11ec-a396-1f25adf88b9f class="margin-0">Tipo</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr></tbody></table>
+<table><thead><tr><td>Field</td><td>Type</td><td>Req</td><td>Key</td></tr></thead>
+      <tbody><tr><td><a href=file:///C:/Program%20Files/Hackolade/resources/app/app.html#cdcff100-7f9e-11ec-a396-1f25adf88b9f class="margin-0">_id</a></td><td class="no-break-word">string</td><td>true</td><td>pk</td></tr>
+            
+            <tr><td><a href=file:///C:/Program%20Files/Hackolade/resources/app/app.html#ec479fc0-7f9e-11ec-a396-1f25adf88b9f class="margin-0">Nombre</a></td><td class="no-break-word">string</td><td>false</td><td></td></tr>
+            
+            
+            <tr><td><a href=file:///C:/Program%20Files/Hackolade/resources/app/app.html#08b5e9f0-7f9f-11ec-a396-1f25adf88b9f class="margin-0">Fórmula&nbsp;química</a></td><td class="no-break-word">string</td><td>false</td><td></td></tr>
+            
+            <tr><td><a href=file:///C:/Program%20Files/Hackolade/resources/app/app.html#2258b810-7f9f-11ec-a396-1f25adf88b9f class="margin-0">Punto&nbsp;de&nbsp;ebullición</a></td><td class="no-break-word">string</td><td>false</td><td></td></tr>
+            
+            <tr><td><a href=file:///C:/Program%20Files/Hackolade/resources/app/app.html#34134b10-7f9f-11ec-a396-1f25adf88b9f class="margin-0">Tipo</a></td><td class="no-break-word">string</td><td>false</td><td></td></tr></tbody></table>
 
 ### <a id="cdcff100-7f9e-11ec-a396-1f25adf88b9f"></a>2.1.2.1.3.1 Field **\_id**
 
