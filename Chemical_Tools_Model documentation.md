@@ -82,17 +82,16 @@ Created with: [Hackolade](https://hackolade.com/) - Polyglot data modeling for N
 
 ##### 2.1.2.1.3 **a\_collection** Fields
 
-<table><thead><tr><td>Field</td><td>Type</td><td>Req</td><td>Key</td></tr></thead>
-      <tbody><tr><td><a href=file:///C:/Program%20Files/Hackolade/resources/app/app.html#cdcff100-7f9e-11ec-a396-1f25adf88b9f class="margin-0">_id</a></td><td class="no-break-word">string</td><td>true</td><td>pk</td></tr>
-            
-            <tr><td><a href=file:///C:/Program%20Files/Hackolade/resources/app/app.html#ec479fc0-7f9e-11ec-a396-1f25adf88b9f class="margin-0">Nombre</a></td><td class="no-break-word">string</td><td>false</td><td></td></tr>
-            
-            
-            <tr><td><a href=file:///C:/Program%20Files/Hackolade/resources/app/app.html#08b5e9f0-7f9f-11ec-a396-1f25adf88b9f class="margin-0">Fórmula&nbsp;química</a></td><td class="no-break-word">string</td><td>false</td><td></td></tr>
-            
-            <tr><td><a href=file:///C:/Program%20Files/Hackolade/resources/app/app.html#2258b810-7f9f-11ec-a396-1f25adf88b9f class="margin-0">Punto&nbsp;de&nbsp;ebullición</a></td><td class="no-break-word">string</td><td>false</td><td></td></tr>
-            
-            <tr><td><a href=file:///C:/Program%20Files/Hackolade/resources/app/app.html#34134b10-7f9f-11ec-a396-1f25adf88b9f class="margin-0">Tipo</a></td><td class="no-break-word">string</td><td>false</td><td></td></tr></tbody></table>
+<table><thead><tr><td>Field</td><td>Type</td><td>Req</td><td>Key</td><td>Description</td><td>Comments</td></tr></thead>
+      <tbody>
+            <tr><td><a href=file:///C:/Program%20Files/Hackolade/resources/app/app.html#cdcff100-7f9e-11ec-a396-1f25adf88b9f class="margin-0">_id</a></td><td class="no-break-word">string</td><td>true</td><td>pk</td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr>
+            <tr><td><a href=file:///C:/Program%20Files/Hackolade/resources/app/app.html#ec479fc0-7f9e-11ec-a396-1f25adf88b9f class="margin-0">Nombre</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr>
+            <tr><td><a href=file:///C:/Program%20Files/Hackolade/resources/app/app.html#08b5e9f0-7f9f-11ec-a396-1f25adf88b9f class="margin-0">Fórmula&nbsp;química</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr>
+            <tr><td><a href=file:///C:/Program%20Files/Hackolade/resources/app/app.html#2258b810-7f9f-11ec-a396-1f25adf88b9f class="margin-0">Punto&nbsp;de&nbsp;ebullición</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr>
+            <tr><td><a href=file:///C:/Program%20Files/Hackolade/resources/app/app.html#34134b10-7f9f-11ec-a396-1f25adf88b9f class="margin-0">Tipo</a></td><td class="no-break-word">string</td><td>false</td><td></td><td><div class="docs-markdown"></div></td><td><div class="docs-markdown"></div></td></tr>
+      </tbody>
+</table>
+
 
 ### <a id="cdcff100-7f9e-11ec-a396-1f25adf88b9f"></a>2.1.2.1.3.1 Field **\_id**
 
