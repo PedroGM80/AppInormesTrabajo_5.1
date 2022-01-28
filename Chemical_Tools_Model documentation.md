@@ -17,8 +17,6 @@ Version: 0.1
 
 File name: MongoDB\_model.hck.json
 
-File path: C:\\Users\\pedro\\MongoDB\_model.hck.json
-
 Printed On: Fri Jan 28 2022 14:53:49 GMT+0100 (hora estándar de Europa central)
 
 Created with: [Hackolade](https://hackolade.com/) - Polyglot data modeling for NoSQL databases, storage formats, REST APIs, and JSON in RDBMS
@@ -138,8 +136,15 @@ Created with: [Hackolade](https://hackolade.com/) - Polyglot data modeling for N
 
 ##### 2.1.2.1.3.3.2 **Fórmula química** properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>Fórmula química</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td>Fórmula química</td></tr><tr><td>Type</td><td>string</td></tr>
-</tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr>
+      </thead>
+            <tbody>
+                  <tr><td>Name</td><td>Fórmula química</td></tr>
+                  <tr><td>Activated</td><td>true</td></tr>
+                  <tr><td>Id</td><td>Fórmula química</td></tr>
+                  <tr><td>Type</td><td>string</td></tr>
+            </tbody>
+</table>
 
 ### <a id="2258b810-7f9f-11ec-a396-1f25adf88b9f"></a>2.1.2.1.3.4 Field **Punto de ebullición**
 
@@ -149,7 +154,12 @@ Created with: [Hackolade](https://hackolade.com/) - Polyglot data modeling for N
 
 ##### 2.1.2.1.3.4.2 **Punto de ebullición** properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>Punto de ebullición</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td>Punto de ebullición</td></tr><tr><td>Type</td><td>string</td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead>
+      <tbody>
+            <tr><td>Name</td><td>Punto de ebullición</td></tr>
+            <tr><td>Activated</td><td>true</td></tr>
+            <tr><td>Id</td><td>Punto de ebullición</td></tr>
+            <tr><td>Type</td><td>string</td></tr></tbody></table>
 
 ### <a id="34134b10-7f9f-11ec-a396-1f25adf88b9f"></a>2.1.2.1.3.5 Field **Tipo**
 
@@ -159,7 +169,8 @@ Created with: [Hackolade](https://hackolade.com/) - Polyglot data modeling for N
 
 ##### 2.1.2.1.3.5.2 **Tipo** properties
 
-<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>Tipo</td></tr><tr><td>Technical name</td><td></td></tr><tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td>Tipo</td></tr><tr><td>Type</td><td>string</td></tr></tbody></table>
+<table><thead><tr><td>Property</td><td>Value</td></tr></thead><tbody><tr><td>Name</td><td>Tipo</td></tr>
+      <tr><td>Activated</td><td>true</td></tr><tr><td>Id</td><td>Tipo</td></tr><tr><td>Type</td><td>string</td></tr></tbody></table>
 
 ##### 2.1.2.1.4 **a\_collection** JSON Schema
 
