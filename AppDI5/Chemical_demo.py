@@ -311,9 +311,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         campo = str("Fórmula química")
         valor = self.lineEditInfo1.text()
         query = {campo: valor}
-        campo2 = str("Fórmula química")
         valor2 = self.lineEditInfo2.text()
-        query2 = {campo: valor}
+        query2 = {campo: valor2}
         try:
             for x in self.a_collection.find(query):
                 for key, value in x.items():
