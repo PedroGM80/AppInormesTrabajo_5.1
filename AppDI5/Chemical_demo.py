@@ -236,7 +236,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.web.load(QUrl(ruta.absolute().as_uri()))
         self.setCentralWidget(self.web)
         self.setCentralWidget(self.web)
-
+        self.showMaximized()
     def count_char(self, formula, char):
         longitud = len(formula)
         count = 0
