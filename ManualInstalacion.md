@@ -30,11 +30,11 @@ Una vez instalado python en nuestro equipo procederemos a la instalación de las
 # 3 Instalando las librerías
 Instalación de PySide6 escribiendo cmd en la barra de navegación de nuestro explorador accedemos a la línea de comandos y escribimos los siguientes comandos para instalar las librerias necesarias para ejecutar la aplicación:
 
- pip install PySide6
- pip install pathlib
- pip install DateTime
- pip install numpy
- pip install pyperclip3
+- pip install PySide6
+- pip install pathlib
+- pip install DateTime
+- pip install numpy
+- pip install pyperclip3
 
 
 
