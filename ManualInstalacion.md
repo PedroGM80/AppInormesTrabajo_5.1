@@ -2,8 +2,7 @@
 * Docs to Markdown version 1.0β33
 * Tue Feb 08 2022 10:07:16 GMT-0800 (PST)
 * Source doc: Manual de Instalación de  Chemicals Tools
-* Tables are currently converted to HTML tables.
-* This document has images: check for >>>>>  gd2md-html alert:  inline image link in generated source and store images to your server. NOTE: Images in exported zip file from Google Docs may not appear in  the same order as they do in your doc. Please check the images!
+
 
 ----->
 
