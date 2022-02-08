@@ -1,8 +1,8 @@
 # Table of Contents
-- [Descargando la aplicación de GitHub](#descargando-la-aplicación-de-github)
-- [Instalando Python](#instalando-python)
-- [Instalando las librerías](#instalando-las-librerías)
-- [Ejecutando el programa](#ejecutando-el-programa)
+1. Descargando la aplicación de GitHub
+2. Instalando Python
+3. Instalando las librerías
+4. Ejecutando el programa
 
 Manual de Instalación de  Chemicals Tools
 
