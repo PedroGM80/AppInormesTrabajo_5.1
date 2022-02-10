@@ -6,6 +6,7 @@ from PySide6.QtWidgets import (QComboBox, QFormLayout, QGridLayout,
                                QToolBar, QVBoxLayout, QWidget)
 
 
+import rc_icons
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
