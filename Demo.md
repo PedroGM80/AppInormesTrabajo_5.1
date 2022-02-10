@@ -5,6 +5,4 @@ categories: codelab,markdown
 environments: Web
 status: Published
 # Demo de la aplicación
-<video width="320" height="240" controls>
-  <source src="Demo.mp4" type="video/mp4">
-</video>
+https://github.com/PedroGM80/AppInormesTrabajo_5.1/blob/main/Demo.mp4
