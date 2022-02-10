@@ -8,4 +8,4 @@ status: Published
 # Demo de la aplicación
 
 
-[![Demo Chemicals Tools](https://www.youtube.com/watch?v=59-pr6MsjKk)
+[![Demo Chemicals Tools](https://youtu.be/59-pr6MsjKk)
