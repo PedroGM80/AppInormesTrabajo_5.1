@@ -74,7 +74,6 @@ class Ui_MainWindow(object):
         self.lineEdit_1.setStyleSheet(u"background:white;\n"
                                       "border-width: 2px;\n"
                                       "border-radius: 10px;\n"
-                                      "padding_top:10px;\n"
                                       "")
 
         self.gridLayout.addWidget(self.lineEdit_1, 0, 1, 1, 1)
@@ -90,7 +89,6 @@ class Ui_MainWindow(object):
         self.lineEdit_2.setStyleSheet(u"background:white;\n"
                                       "border-width: 2px;\n"
                                       "border-radius: 10px;\n"
-                                      "padding_top:10px;\n"
                                       "")
 
         self.gridLayout.addWidget(self.lineEdit_2, 1, 1, 1, 1)
@@ -106,7 +104,6 @@ class Ui_MainWindow(object):
         self.lineEdit_3.setStyleSheet(u"background:white;\n"
                                       "border-width: 2px;\n"
                                       "border-radius: 10px;\n"
-                                      "padding_top:10px;\n"
                                       "")
         self.gridLayout.addWidget(self.lineEdit_3, 2, 1, 1, 1)
         self.label_field4 = QLabel(self.layoutWidget)
@@ -123,7 +120,6 @@ class Ui_MainWindow(object):
         self.lineEdit_4.setStyleSheet(u"background:white;\n"
                                       "border-width: 2px;\n"
                                       "border-radius: 10px;\n"
-                                      "padding_top:10px;\n"
                                       "")
 
         self.gridLayout.addWidget(self.lineEdit_4, 3, 1, 1, 1)
