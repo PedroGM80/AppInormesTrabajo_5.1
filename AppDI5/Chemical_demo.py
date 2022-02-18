@@ -17,7 +17,7 @@ from pdfrw import PdfReader
 from pdfrw.buildxobj import pagexobj
 from pdfrw.toreportlab import makerl
 from pyqtgraph.Qt import QtGui
-from PySide6.QtGui import QPixmap
+from PySide6.QtGui import QPixmap,QIcon
 from PySide6.QtWidgets import (QAbstractItemView, QApplication, QCheckBox,
                                QComboBox, QHBoxLayout, QLabel, QLineEdit,
                                QMainWindow, QPushButton, QSpinBox,
@@ -26,23 +26,24 @@ from PySide6.QtWidgets import (QAbstractItemView, QApplication, QCheckBox,
 from reportlab.pdfgen.canvas import Canvas
 from Chemical import Ui_MainWindow
 
-
+basedir = os.path.dirname(__file__)
 class MainWindow(QMainWindow, Ui_MainWindow):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
-        self.Dato1f1 = ""
-        self.Dato4f1 = ""
-        self.Dato5f1 = ""
-        self.Dato1f2 = ""
-        self.Dato4f2 = ""
-        self.Dato5f2 = ""
+        self.Dato1f1 = ''
+        self.Dato4f1 = ''
+        self.Dato5f1 = ''
+        self.Dato1f2 = ''
+        self.Dato4f2 = ''
+        self.Dato5f2 = ''
         client = MongitaClientDisk()
         my_db = client.b_db
         self.a_collection = my_db.new_collection
         self.actionPaste.triggered.connect(self.pasteClipboard)
         self.actionCopy.triggered.connect(self.copyClipboard)
         self.actionCut.triggered.connect(self.cutClipboard)
+        self.actionHelp.triggered.connect(self.showHelp)
         self.ButtonInsert.clicked.connect(self.insertData)
         self.ButtonRemove.clicked.connect(self.removeData)
         self.ButtonRemove.enterEvent = lambda event: self.otherHide()
@@ -63,7 +64,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         page1.setSubTitle('Introduzaca su nombre completo')
         lineEdit = QLineEdit()
         label = QLabel()
-        label.setText("Nombre completo:")
+        label.setText('Nombre completo:')
         hLayout1 = QHBoxLayout(page1)
         hLayout1.addWidget(label)
         hLayout1.addWidget(lineEdit)
@@ -72,22 +73,22 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
         page2 = QWizardPage()
         page2.setTitle('Generación del identificador')
-        page2.setSubTitle("Genere su identificador")
-        next.clicked.connect(lambda: page2.setSubTitle(page1.field('nombre') + " genere su identificador"))
+        page2.setSubTitle('Genere su identificador')
+        next.clicked.connect(lambda: page2.setSubTitle(page1.field('nombre') + ' genere su identificador'))
         next.clicked.connect(lambda: self.asignaNombre(page1.field('nombre')))
 
         self.spin = QSpinBox()
         self.check_box = QCheckBox()
         self.combo = QComboBox()
-        self.combo.addItem("A")
-        self.combo.addItem("B")
-        self.combo.addItem("C")
+        self.combo.addItem('A')
+        self.combo.addItem('B')
+        self.combo.addItem('C')
         self.spin.setMaximum(9)
         self.spin.setMinimum(0)
         label1 = QLabel()
         label2 = QLabel()
-        label1.setText("Letra de id: ")
-        label2.setText("Número de id: ")
+        label1.setText('Letra de id: ')
+        label2.setText('Número de id: ')
         hLayout2 = QHBoxLayout(page2)
         hLayout2.addWidget(label1)
         hLayout2.addWidget(self.spin)
@@ -99,11 +100,11 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         page3.setTitle('Verificación del idntificador')
         page3.setSubTitle('Verifique su id')
         label3 = QLabel()
-        next.clicked.connect(lambda: label3.setText(" Su Id generada es: " + self.combo.currentText() + "-" + str(
-            self.spin.value()) + "   ¿Valores correctos?"))
+        next.clicked.connect(lambda: label3.setText(' Su Id generada es: ' + self.combo.currentText() + '-' + str(
+            self.spin.value()) + '   ¿Valores correctos?'))
         next.clicked.connect(lambda: self.setID())
         dateTimeObj = date.today()
-        timestampStr = dateTimeObj.strftime("%d-%b-%Y")
+        timestampStr = dateTimeObj.strftime('%d-%b-%Y')
         self.fechaFin = timestampStr
         hLayout3 = QHBoxLayout(page3)
         hLayout3.addWidget(label3)
@@ -120,9 +121,9 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         page4.setSubTitle('Terminando el proceso')
         label4 = QLabel()
         self.label5 = QLabel()
-        button4 = QPushButton("Generar Informe")
-        label4.setText("Muchas gracias por su colaboración")
-        self.label5.setText("")
+        button4 = QPushButton('Generar Informe')
+        label4.setText('Muchas gracias por su colaboración')
+        self.label5.setText('')
         hLayout4 = QVBoxLayout(page4)
         hLayout4.addWidget(label4)
         hLayout4.addWidget(self.label5)
@@ -137,14 +138,14 @@ class MainWindow(QMainWindow, Ui_MainWindow):
     def setID(self):
         item_select = self.combo.currentText()
         spin_selected = self.spin.value()
-        self.idFin = item_select + "-" + str(spin_selected)
+        self.idFin = item_select + '-' + str(spin_selected)
 
     def asignaNombre(self, nombre):
         self.nombreFin = nombre
 
     def generaInforme(self):
-        outfile = "informe.pdf"
-        template = PdfReader("template.pdf", decompress=False).pages[0]
+        outfile = 'informe.pdf'
+        template = PdfReader('template.pdf', decompress=False).pages[0]
         template_obj = pagexobj(template)
         canvas = Canvas(outfile)
         xobj_name = makerl(canvas, template_obj)
@@ -188,10 +189,10 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
         fn = QtGui.QFont()
         fn.setPointSize(15)
-        win.getAxis("bottom").setTickFont(fn)
-        win.getAxis("left").setTickFont(fn)
-        win2.getAxis("bottom").setTickFont(fn)
-        win2.getAxis("left").setTickFont(fn)
+        win.getAxis('bottom').setTickFont(fn)
+        win.getAxis('left').setTickFont(fn)
+        win2.getAxis('bottom').setTickFont(fn)
+        win2.getAxis('left').setTickFont(fn)
         x = np.arange(1)
         bg1 = pg.BarGraphItem(x=x, height=self.y1, width=0.6, brush='r')
         bg2 = pg.BarGraphItem(x=x + 2, height=self.y2, width=0.6, brush='b')
@@ -211,27 +212,27 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         exporterB.parameters()['width'] = 170
         exporter.export('graphic.png')
         exporterB.export('graphicB.png')
-        outfile = "informe.pdf"
-        template = PdfReader("informe.pdf", decompress=False).pages[0]
+        outfile = 'informe.pdf'
+        template = PdfReader('informe.pdf', decompress=False).pages[0]
         template_obj = pagexobj(template)
         canvas = Canvas(outfile)
         xobj_name = makerl(canvas, template_obj)
         canvas.doForm(xobj_name)
-        canvas.drawImage("graphic.png", 50, 300, width=None, height=None, mask=None)
-        canvas.drawImage("graphicB.png", 50, 160, width=None, height=None, mask=None)
+        canvas.drawImage('graphic.png', 50, 300, width=None, height=None, mask=None)
+        canvas.drawImage('graphicB.png', 50, 160, width=None, height=None, mask=None)
 
         canvas.save()
-        self.label5.setText("Informe generado con éxito")
+        self.label5.setText('Informe generado con éxito')
         win.close()
         win2.close()
 
-        self.setWindowTitle("Mi informe")
+        self.setWindowTitle('Mi informe')
         self.web = QWebEngineView()
         self.web.settings().setAttribute(QWebEngineSettings.PluginsEnabled, True)
-        self.setWindowTitle("Informe")
+        self.setWindowTitle('Informe')
         self.web = QWebEngineView()
         self.web.settings().setAttribute(QWebEngineSettings.PluginsEnabled, True)
-        ruta = Path("informe.pdf")
+        ruta = Path('informe.pdf')
         ruta.absolute().as_uri()
         self.web.load(QUrl(ruta.absolute().as_uri()))
         self.setCentralWidget(self.web)
@@ -251,10 +252,10 @@ class MainWindow(QMainWindow, Ui_MainWindow):
     def conectar(self):
         if (self.check_box.checkState() == False):
             self.check_box.setChecked(True)
-            self.lineEdit_check.setText("ok")
+            self.lineEdit_check.setText('ok')
         else:
             self.check_box.setChecked(False)
-            self.lineEdit_check.setText("")
+            self.lineEdit_check.setText('')
 
     def otherHide(self):
         self.lineEdit_2.hide()
@@ -262,7 +263,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.lineEdit_4.hide()
         self.label_field2.hide()
         self.label_field3.hide()
-        self.label_field4.setText("")
+        self.label_field4.setText('')
 
     def otherShow(self):
         self.lineEdit_2.show()
@@ -270,7 +271,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.lineEdit_3.show()
         self.label_field3.show()
         self.lineEdit_4.show()
-        self.label_field4.setText("Tipo: ")
+        self.label_field4.setText('Tipo: ')
 
     def getFocus(self):
         if (self.lineEdit_1.hasFocus() == True):
@@ -297,18 +298,18 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         lineEditFocus = self.getFocus()
         text = lineEditFocus.text()
         textCopyOK = pyperclip.copy(text)
-        lineEditFocus.setText("")
+        lineEditFocus.setText('')
 
     def pasteClipboard(self):
         lineEditFocus = self.getFocus()
         lineEditFocus.setText(pyperclip.paste())
 
     def removeData(self):
-        self.a_collection.delete_one({"_id": self.lineEdit_1.text()})
+        self.a_collection.delete_one({'_id': self.lineEdit_1.text()})
         self.updateTable()
 
     def newWizard(self):
-        campo = str("Fórmula química")
+        campo = str('Fórmula química')
         valor = self.lineEditInfo1.text()
         query = {campo: valor}
         valor2 = self.lineEditInfo2.text()
@@ -316,21 +317,21 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         try:
             for x in self.a_collection.find(query):
                 for key, value in x.items():
-                    if (key != "_id"):
-                        if (key == "Nombre"):
+                    if (key != '_id'):
+                        if (key == 'Nombre'):
                             self.Dato1f1 = value
-                        if (key == "Tipo"):
+                        if (key == 'Tipo'):
                             self.Dato4f1 = value
-                        if (key == "Punto de ebullición"):
+                        if (key == 'Punto de ebullición'):
                             self.Dato5f1 = value
                 for x in self.a_collection.find(query2):
                     for key, value in x.items():
-                        if (key != "_id"):
-                            if (key == "Nombre"):
+                        if (key != '_id'):
+                            if (key == 'Nombre'):
                                 self.Dato1f2 = value
-                            if (key == "Tipo"):
+                            if (key == 'Tipo'):
                                 self.Dato4f2 = value
-                            if (key == "Punto de ebullición"):
+                            if (key == 'Punto de ebullición'):
                                 self.Dato5f2 = value
         except Exception as e:
             raise e
@@ -342,18 +343,18 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
     def insertData(self):
         try:
-            self.data_demo = {"_id": self.lineEdit_1.text(), "Nombre": self.lineEdit_2.text(
-            ), "Fórmula química": self.lineEdit_1.text(), "Punto de ebullición": self.lineEdit_3.text(),
-                              "Tipo": self.lineEdit_4.text()}
+            self.data_demo = {'_id': self.lineEdit_1.text(), 'Nombre': self.lineEdit_2.text(
+            ), 'Fórmula química': self.lineEdit_1.text(), 'Punto de ebullición': self.lineEdit_3.text(),
+                              'Tipo': self.lineEdit_4.text()}
             self.a_collection.insert_one(self.data_demo)
             self.updateTable()
         except:
-            print("An exception occurred")
+            print('An exception occurred')
 
     def updateData(self):
-        self.a_collection.update_one({"_id": self.lineEdit_1.text()}, {
-            "$set": {"Nombre": self.lineEdit_2.text(), "Fórmula química": self.lineEdit_1.text(),
-                     "Punto de ebullición": self.lineEdit_3.text(), "Tipo": self.lineEdit_4.text()}})
+        self.a_collection.update_one({'_id': self.lineEdit_1.text()}, {
+            '$set': {'Nombre': self.lineEdit_2.text(), 'Fórmula química': self.lineEdit_1.text(),
+                     'Punto de ebullición': self.lineEdit_3.text(), 'Tipo': self.lineEdit_4.text()}})
         self.updateTable()
 
     def updateTable(self):
@@ -367,7 +368,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             columna = 0
             for x in self.a_collection.find():
                 for key, value in x.items():
-                    if (key != "_id"):
+                    if (key != '_id'):
                         self.tableEdit.setItem(
                             fila - 1, columna, QTableWidgetItem(value))
                         self.tableFilter.setItem(
@@ -377,7 +378,12 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 columna = 0
         except Exception as e:
             raise e
-
+    def showHelp(self):
+        self.web = QWebEngineView()
+        self.web.settings().setAttribute(QWebEngineSettings.PluginsEnabled, True)
+        url = "https://pedrogm80.github.io/AppInormesTrabajo_5.1/"
+        self.web.load(url)
+        self.setCentralWidget(self.web)
     def filterTable(self):
         self.tableFilter.clearContents()
         fila = 0
@@ -391,7 +397,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             self.tableFilter.setRowCount(iter_length)
             for x in self.a_collection.find(query):
                 for key, value in x.items():
-                    if (key != "_id"):
+                    if (key != '_id'):
                         self.tableFilter.setItem(
                             fila, columna, QTableWidgetItem(value))
                         columna += 1
@@ -402,6 +408,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
 
 app = QApplication(sys.argv)
+app.setWindowIcon(QtGui.QIcon('logo.ico'))
 w = MainWindow()
 w.show()
 app.exec()

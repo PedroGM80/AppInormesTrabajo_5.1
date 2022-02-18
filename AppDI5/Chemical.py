@@ -32,7 +32,8 @@ class Ui_MainWindow(object):
                       QSize(), QIcon.Normal, QIcon.Off)
         self.actionPaste.setIcon(icon2)
         self.actionHelp = QAction(MainWindow)
-        self.actionHelp.setEnabled(False)
+        self.actionHelp.setEnabled(True)#####
+
         self.actionHelp.setObjectName(u"actionHelp")
         icon3 = QIcon()
         icon3.addFile(u":/icons/icons8-acerca-de-32.png",
