@@ -1,9 +1,9 @@
 
-#Instalación desde windows
+# Instalación desde windows
 
 1.Desacarga la instalación 
 
-https://github.com/PedroGM80/AppInormesTrabajo_5.1/releases/download/untagged-8771fd2d31fb185d0d85/Chemical_demo_install.exe
+https://github.com/PedroGM80/AppInormesTrabajo_5.1/releases/tag/Instalador
 
 - Ejecuta el asistente de instalación.
 - Elije la opción de instalciópn minima, completa o personalizada.
