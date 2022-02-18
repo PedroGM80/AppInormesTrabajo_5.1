@@ -1,4 +1,16 @@
-# Table of Contents
+
+#Instalación desde windows
+
+1.Desacarga la instalación 
+
+https://github.com/PedroGM80/AppInormesTrabajo_5.1/releases/download/untagged-8771fd2d31fb185d0d85/Chemical_demo_install.exe
+
+- Ejecuta el asistente de instalación.
+- Elije la opción de instalciópn minima, completa o personalizada.
+
+## Instalación en otros sistemas operativos.
+
+# Contenidos
 1. Descargando la aplicación de GitHub
 2. Instalando Python
 3. Instalando las librerías
