@@ -44,7 +44,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.actionCopy.triggered.connect(self.copyClipboard)
         self.actionCut.triggered.connect(self.cutClipboard)
         self.actionHelp.triggered.connect(self.showHelp)
-        self.ButtonInsert.clicked.connect(self.insertData)
+        self.ButtonInsert.clicked.connect(lambda:self.insertData())
         self.ButtonRemove.clicked.connect(self.removeData)
         self.ButtonRemove.enterEvent = lambda event: self.otherHide()
         self.ButtonRemove.leaveEvent = lambda event: self.otherShow()
